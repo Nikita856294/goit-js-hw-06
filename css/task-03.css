@@ -1,4 +1,20 @@
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .gallery {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
-gallery-item
+
+/* margin: -15px; */
+.gallery-item {
+  display: flex;
+  flex-basis: calc((100% - 120px) / 3);
+  margin: 15px;
+}
+/* flex-basis: calc((100% - 60px) / 3);
+  margin: 15px; */
