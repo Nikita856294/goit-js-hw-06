@@ -1,7 +1,7 @@
 const itemRef = document.querySelector("#validation-input");
 
 function validation(event) {
-  if (event.currentTarget.value.length === Number(itemRef.dataset.length)) {
+  if (event.currentTarget.value.length === parseInt(itemRef.dataset.length)) {
     event.currentTarget.classList.add("valid");
     event.currentTarget.classList.remove("invalid");
   } else {
